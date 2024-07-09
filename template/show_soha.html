@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <section class="pt-5 service-wrap">
+        <ul>
+            <h3>Sohalar ro'yxati</h3>
+        </ul>
+        <ul>
+            {% for elem in sohalar %}
+            <li><a href="/lugat?s={{ elem.id }}">{{ elem.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>
+
+{% endblock %}

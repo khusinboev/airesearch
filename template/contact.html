@@ -1,0 +1,226 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- HERO
+================================================== -->
+<section class="page-banner-area page-contact">
+    <div class="overlay"></div>
+    <!-- Content -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-md-12 col-12 text-center">
+                <div class="page-banner-content">
+                    <h1 class="display-4 font-weight-bold">Savol paydo bo'ldimi?</h1>
+                    <p>Yordam berolsak mamnun bo'lamiz.</p>
+                </div>
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</section>
+
+
+<!-- SECTIONS
+    ================================================== -->
+<section id="contact-info">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="contact-info-block text-center">
+                    <i class="pe-7s-map-marker"></i>
+                    <h4>Manzil</h4>
+                    <p class="lead">100187, O'zbekiston, Toshkent, Qorasuv-3, Mingbuloq, 38</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="contact-info-block text-center">
+                    <i class="pe-7s-mail"></i>
+                    <h4>Email</h4>
+                    <p class="lead">info@unicon.uz</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="contact-info-block text-center">
+                    <i class="pe-7s-phone"></i>
+                    <h4>Telefon raqam</h4>
+                    <p class="lead">+99871 208-81-51
+                        <br> +99897 513-00-92</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-8 col-lg-6">
+                <h5>Xabar qoldiring</h5>
+                <!-- Heading -->
+                <h2 class="section-title mb-2 ">
+                    <span class="font-weight-normal">O'zingiz</span> haqingizda ma'lumot bering.
+                </h2>
+
+                <!-- Subheading -->
+                <p class="mb-5 ">
+                    Savollar va takliflaringizdan xursand bo'lamiz.
+                </p>
+
+            </div>
+        </div> <!-- / .row -->
+
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- form message -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                            Xabaringiz muvaffaqiyatli jo'natildi.
+                        </div>
+                    </div>
+                </div>
+                <!-- end message -->
+                <!-- Contacts Form -->
+                <form class="contact_form" action="mail">
+                    <div class="row">
+                        <!-- Input -->
+                        <div class="col-sm-6 mb-6">
+                            <div class="form-group">
+                                <label class="h6 small d-block text-uppercase">
+                                    Ismingiz
+                                    <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="input-group">
+                                    <input class="form-control" name="name" id="name" required=""
+                                        placeholder="Alisher Usmonov" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Input -->
+
+                        <!-- Input -->
+                        <div class="col-sm-6 mb-6">
+                            <div class="form-group">
+                                <label class="h6 small d-block text-uppercase">
+                                    Elektron manzilingiz
+                                    <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="input-group ">
+                                    <input class="form-control" name="email" id="email" required=""
+                                        placeholder="alisher@gmail.com" type="email">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Input -->
+
+
+
+                        <!-- Input -->
+                        <div class="col-sm-6 mb-6">
+                            <div class="form-group">
+                                <label class="h6 small d-block text-uppercase">
+                                    Mavzu
+                                    <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="input-group">
+                                    <input class="form-control" name="subject" id="subject" required=""
+                                        placeholder="Hamkorlik" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Input -->
+
+                        <!-- Input -->
+                        <div class="col-sm-6 mb-6">
+                            <div class="form-group">
+                                <label class="h6 small d-block text-uppercase">
+                                    Telefon raqamingiz
+                                    <span class="text-danger">*</span>
+                                </label>
+
+                                <div class="input-group ">
+                                    <input class="form-control" id="phone" name="phone" required=""
+                                        placeholder="+998(97)-123-45-67" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Input -->
+                    </div>
+
+                    <!-- Input -->
+                    <div class="form-group mb-5">
+                        <label class="h6 small d-block text-uppercase">
+                            Qanday yordam bera olamiz?
+                            <span class="text-danger">*</span>
+                        </label>
+
+                        <div class="input-group">
+                            <textarea class="form-control" rows="4" name="message" id="message" required=""
+                                placeholder="Salom, aytmoqchi edimki ..."></textarea>
+                        </div>
+                    </div>
+                    <!-- End Input -->
+
+                    <div class="">
+                        <input name="submit" type="submit" class="btn btn-primary btn-circled" value="Jo'natish">
+
+                        <p class="small pt-3">Siz bilan 1-2 ish kunida bog'lanamiz.</p>
+                    </div>
+                </form>
+                <!-- End Contacts Form -->
+            </div>
+
+            <!-- <div class="col-lg-6 col-md-6"> -->
+            <!-- START MAP -->
+            <!-- <div id="map" ></div> -->
+            <!-- END MAP -->
+            <!-- </div> -->
+            <!-- <div id="map-wrap">
+                <div id="map-block">
+                    <div id="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5887.281278096811!2d69.20075522664422!3d41.28063616709637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a3b26068141%3A0xe5b0734cf65d3272!2sChilanzar-C%2C%20Tashkent%20100097%2C%20Uzbekistan!5e1!3m2!1sen!2skz!4v1649892837327!5m2!1sen!2skz"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div id="map-settings"></div>   
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5887.281278096811!2d69.20075522664422!3d41.28063616709637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a3b26068141%3A0xe5b0734cf65d3272!2sChilanzar-C%2C%20Tashkent%20100097%2C%20Uzbekistan!5e1!3m2!1sen!2skz!4v1649892837327!5m2!1sen!2skz"
+                    width="600" height="450" style="border:0;" allowfullscreen="true" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> -->
+
+            <!-- Add yandex map -->
+            <div class="map">
+                <div style="position:relative;overflow:hidden;"><a
+                        href="https://yandex.com/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Tashkent</a><a
+                        href="https://yandex.uz/maps/10335/tashkent/?from=api-maps&ll=69.290651%2C41.339996&origin=jsapi_2_1_79&pt=69.365%2C41.3305~69.365%2C41.3305&z=17"
+                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Mehr Street, 50 —
+                        Yandex Maps</a><iframe src="https://yandex.com/map-widget/v1/-/CCUFEHRfKD" width="560"
+                        height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--  Page Scroll to Top  -->
+
+<a class="scroll-to-top js-scroll-trigger" href="#top-header">
+    <i class="fa fa-angle-up"></i>
+</a>
+
+
+
+
+{% endblock %}
